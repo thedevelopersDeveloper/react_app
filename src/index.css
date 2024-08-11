@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'gilroy';
+}
+html,body{
+	height:100%;
+	width:100%;
+}
+.nav{
+	height:13.5vh;
+	width:100%;
+	background-color:#fff;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.nav h1{
+	font-size:3rem;
+}
+.cards{
+	min-height:86.5vh;
+	width:100%;
+	background-color:grey;
+	display:flex;
+	gap:2vw;
+	flex-wrap:wrap;
+	justify-content:center;
+	padding:3vw 3vw;
+}
+.cards .card{
+	padding:1vw 1vw;
+	min-height:30vh;
+	width:30%;
+	border:none;
+	border-radius:20px;
+	background-color:#414141;
+	transition:all 0.2s linear;
+	color:white;
+}
+.cards .card:hover{
+	scale:0.9;
+}
+.cards .card .card__info{
+	height:25%;
+	width:100%;
+}
+.cards .card .card__img{
+	height:70%;
+	width:100%;
+	object-fit:cover;
+	object-position:top;
+}
+.cards .card .card__info a{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+}
+.cards .card .card__info p{
+	text-align:center;
+}
+.cards .card .card__info h3{
+    text-align: center;
+    font-size: 2.5em;
+}
+.cards .card .card__info a button{
+	height:5vh;
+	width:10vw;
+	background-color:blue;
+	border:none;
+	font-size:1.2rem;
+	color:white;
+	border-radius:20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
